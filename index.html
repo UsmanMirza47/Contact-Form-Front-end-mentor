@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="msg hidden">
+    <div class="msg-first">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+        <path fill="#fff"
+          d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z" />
+      </svg>
+      <h1>Message Sent!</h1>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div id="form">
+      <!-- firstName -->
+      <div class="name">
+        <div class="firstName">
+          <label for="firstName">First Name *</label>
+          <input type="text" class="text" id="firstName" placeholder="First Name">
+          <p id="para-1" class="hidden">In valid field is required</p>
+        </div>
+        <!-- Last Name -->
+        <div class="lastName">
+          <label for="lastName">First Name *</label>
+          <input type="text" id="lastName" class="text" placeholder="First Name">
+          <p id="para-2" class="hidden">In valid field is required</p>
+        </div>
+      </div>
+      <!-- email Address -->
+      <div class="email">
+        <label for="email"> Email Address</label>
+        <input type="email" class="text" placeholder="Email Address" name="" id="email">
+        <p id="para-3" class="hidden">invalid field is required</p>
+      </div>
+      <!-- query type -->
+      <div class="query">
+        <h5>Query type</h3>
+          <div class="innerQuery">
+            <div class="query-box">
+              <!-- left -->
+              <input type="radio" class="query" value="General Enquiry" name="query" id="query">
+              <label for="query">General Enquiry</label>
+            </div>
+            <!-- right -->
+            <div class="query-box">
+              <input type="radio" class="query" value="Support Request" name="query" id="Query">
+              <label for="Query">Support Request</label>
+            </div>
+          </div>
+      </div>
+      <p id="para-4" class="hidden">Please select a query type</p>
+      <!-- Message -->
+      <div class="msg-2">
+        <label for="msg">Message</label>
+        <textarea rows="5" name="" id="msg"></textarea>
+      </div>
+      <p id="para-5" class="hidden">This field is required</p>
+      <!-- checkBox -->
+      <div class="checkBox">
+        <input type="checkbox" name="" id="checkBox">
+        <label for="checkBox">I consent to being contacted by the team</label>
+      </div>
+      <p id="para-6" class="hidden">This field is required</p>
+      <!-- submit -->
+      <button class="submit">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
